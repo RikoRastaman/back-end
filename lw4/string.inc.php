@@ -10,8 +10,8 @@ function withoutLast($str) {
 
 function reverse($string) {
     $len =mb_strlen($string);
-    $stringExp = mb_split($string);
-    for ($i = $len - 1; $i >=0;$i--)
+    $stringExp = preg_split('//u',$string);
+    for ($i = $len ; $i >=0;$i--)
     {
         echo $stringExp[$i];
     }
