@@ -17,11 +17,19 @@ function reverse($string) {
 }
 
 function removeExtraBlanks($str) {
-    $str = $_GET["str"];
 
     $arr = explode(' ', $str);
     $arr = array_diff($arr, ['']);
 
     $str = implode(' ', $arr);
     return $str;
+}
+
+function checkIdentifier($identifier) {
+    $arr = str_split($identifier);
+    if(ctype_alpha($arr[0])) {
+        return true;
+    } else {
+        return false;
+    }
 }

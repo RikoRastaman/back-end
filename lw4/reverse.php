@@ -5,7 +5,7 @@ require_once ('string.inc.php');
 header("Content-Type: text/plain; charset = utf-8");
 
 if (isset( $_GET[ "str" ] ) && !empty( $_GET[ "str" ] )) {
-    echo reverse($_GET[ "str" ]);
+    echo "Reversed string:" . reverse($_GET[ "str" ]);
 } else {
     echo "Pleast enter a string";
 }
