@@ -1,6 +1,6 @@
 <?php
 
-require_once ('string.inc.php');
+require_once ('inc/string.inc.php');
 
 header("Content-Type: text/plain; charset = utf-8");
 
